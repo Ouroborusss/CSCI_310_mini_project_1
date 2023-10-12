@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .contentWrapper {
+        display: grid;
+        grid-template-columns: 28% 70%;
+        grid-auto-rows: 300px;
+        border-radius: 10px;
+        background-color: #d38ece;
+      
+      }
+      .contentWrapper > div {
+        border: 2px solid #634361;
+        border-radius: 10px;
+        color: #634361;
+      }
+      .contentSubWrapper{
+        display:grid;
+        grid-template-rows: repeat(3, 50px);
+        grid-auto-columns: 1fr;
+        border-radius: 10px;
+        background-color: #8ed3ac;
+      }
+      .contentSubWrapper > div{
+        border: 2px solid #3c855c;
+        border-radius: 10px;
+        color: #3c855c;
+      }
+
+      .contentSubWrapper > button{
+        border: 2px solid #3c855c;
+        border-radius: 10px;
+        color: #3c855c;
+        background-color: #8ed3ac;
+      }
+
+      .contentSubWrapper >button:hover{
+        background-color: #afd3bf;
+      }
+
+      .contentSubWrapperTextInfo{
+        text-align: center;
+        font-size: x-large;
+        font-family: Helvetica, sans-serif;
+        padding: 10px;
+      }
+
+      .pageContent{
+        font-family: Helvetica, sans-serif;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contentWrapper">
+      <div class="contentSubWrapper">
+        <button type="button" onclick='window.location.href = "https://stackoverflow.com"' class="contentSubWrapperTextInfo">
+          1
+        </button>
+        <button type="button" onclick="alert('Hello world!')" class="contentSubWrapperTextInfo">
+          2
+        </button>
+        <button type="button" onclick="alert('Hello world!')" class="contentSubWrapperTextInfo">
+          3 
+        </button>
+      </div>
+      <div class="pageContent">
+        eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      </div>
+    </div>
+  </body>
+</html>
