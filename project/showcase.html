@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+
+    <title>Griffins Website</title>
+
+    <script type="module" src="./JS/import.js"></script>
+    <script>
+      const year = 2023;
+    </script>
+  </head>
+  <body>
+    <div class="headerWrapper">
+      <div class="pfp"><img src="../pfpImage/IMG_3633.PNG" id="pfpInfo"></div>
+      <div class="name"><a id="nameInfo">Griffin Finkler</a></div>
+    </div>
+    <div class="menuWrapper">
+      <button type="button" onclick='window.location.href = "https://ouroborusss.github.io/CSCI_310_mini_project_1/skills/progLang"' id="menuTextInfo">
+        Skills
+      </button>
+      <button type="button" onclick='window.location.href = "https://ouroborusss.github.io/CSCI_310_mini_project_1/work_experience/cerias"' id="menuTextInfo">
+        Work Experience
+      </button>
+      <button type="button" onclick='window.location.href = "https://ouroborusss.github.io/CSCI_310_mini_project_1/project/showcase"' id="menuTextInfo" style="background-color: #acc3d6;">
+        Project
+      </button>
+    </div>
+    <div class="contentWrapper">
+      <div class="contentSubWrapper">
+        <button type="button" onclick='window.location.href = "https://ouroborusss.github.io/CSCI_310_mini_project_1/project/showcase"' class="contentSubWrapperTextInfo">
+          Project
+        </button>
+      </div>
+      <div class="pageContent">
+        <button onclick="alert('Hello')">Demo 1</button>
+        <button onclick='document.getElementById("demo2").innerHTML = "hiya"'>Demo 2</button>
+        <p id=demo2></p>
+        <button onclick='document.getElementById("demo3").innerHTML = year'>Demo 3</button>
+        <p id="demo3"></p>
+        <button onclick='document.getElementById("demo4").innerHTML = day'>Demo 4</button>
+        <p id="demo4"></p>
+        <button onclick="document.getElementById('myImage').src='./Images/smile.jpg'">Smile</button>
+        <img id="myImage" src="./Images/smile.jpg" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='./Images/frown.png'">Smile</button>
+      </div>
+    </div>
+  </body>
+</html>
